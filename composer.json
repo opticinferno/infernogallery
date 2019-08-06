@@ -3,7 +3,8 @@
   "description": "Add galleries to site",
   "type": "silverstripe-vendormodule",
   "license": "BSD-3-Clause",
-  "keywords": ["opticinferno"
+  "keywords": [
+    "opticinferno"
   ],
   "authors": [
     {
