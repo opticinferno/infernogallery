@@ -4,7 +4,6 @@
     <div class="d-none d-lg-block">
         <div id="lightgallery" class="row">
             <% loop $GalleryImage.Sort('SortOrder') %>
-$Up.ImageHeight
                 <% if $Up.ImageHeight == '' && $Up.ImageWidth == '' %>
                     <a href="$Image.URL" data-sub-html="$Description">
                         <img class="gal-style" src="$Image.Fill(200,200).URL" alt="$Tilte"/>
