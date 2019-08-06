@@ -12,6 +12,7 @@ namespace Inferno\InfernoGallery\Gallery;
         public function onAfterInit() {
 
             Requirements::set_write_js_to_body(true);
+            Requirements::set_force_js_to_bottom(true);
 
             Requirements::css("opticinferno/infernogallery:client/lightgallery/Styles.css");
 
