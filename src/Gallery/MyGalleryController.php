@@ -13,6 +13,8 @@ namespace Inferno\InfernoGallery\Gallery;
 
             Requirements::set_write_js_to_body(true);
 
+            Requirements::css("opticinferno/infernogallery:client/lightgallery/Styles.css");
+
             Requirements::css("opticinferno/infernogallery:client/lightgallery/dist/css/lg-fb-comment-box.css");
             Requirements::css("opticinferno/infernogallery:client/lightgallery/dist/css/lg-transitions.css");
             Requirements::css("opticinferno/infernogallery:client/lightgallery/dist/css/lightgallery.css");

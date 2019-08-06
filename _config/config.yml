@@ -1,0 +1,6 @@
+---
+Name: galleryConfig
+---
+Page:
+  extensions:
+    - Inferno\InfernoGallery\Gallery\MyGalleryController

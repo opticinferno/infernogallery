@@ -26,6 +26,11 @@ class GalleryImage extends DataObject {
     private static $table_name = 'GalleryImage';
     private static $owns = ['Image'];
 
+    private static $summary_fields = [
+        'Image.CMSThumbnail' => 'Image',
+        'Title' => 'Title'
+    ];
+
     // Add fields to dataobject
     public function getCMSFields() {
         $fields = parent::getCMSFields();
