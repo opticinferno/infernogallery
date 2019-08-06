@@ -1,0 +1,29 @@
+{
+  "name": "opticinferno/infernogallery",
+  "description": "Add galleries to site",
+  "type": "silverstripe-vendormodule",
+  "license": "BSD-3-Clause",
+  "keywords": [
+    "inferno"
+  ],
+  "authors": [
+    {
+      "name": "Gordon Skinner",
+      "email": "gordon@opticblaze.co.za"
+    }
+  ],	"require": {
+  "silverstripe/framework": "^4.4"
+},
+  "minimum-stability": "dev",
+
+  "autoload": {
+    "psr-4": {
+      "Inferno\\InfernoGallery\\": "src/"
+    }
+  },
+  "extra": {
+    "expose": [
+      "client"
+    ]
+  }
+}

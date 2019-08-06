@@ -14,25 +14,27 @@ class GalleryImage extends DataObject {
 
     private static $db = array(
         'Title' => 'Varchar',
-        'Description' => 'Varchar(500)'
+        'Description' => 'Varchar(500)',
+        'SortOrder' => 'Int',
     );
 
     // One-to-one relationship with gallery page
     private static $has_one = array(
         'Image' => Image::class,
+        'GalleryPage' => GalleryPage::class
     );
     private static $table_name = 'GalleryImage';
-    private static $owns = 'Image';
+    private static $owns = ['Image'];
 
     // Add fields to dataobject
     public function getCMSFields() {
         $fields = parent::getCMSFields();
 
-        $fields = new FieldList(
-            new TextField('Title','Image Title'),
-            new TextareaField('Description','Photo Description (Max 500 Charachters)'),
-            new UploadField('Image','Photo')
-        );
+
+        $fields->addFIeldTOTab('Root.Main',new TextField('Title','Image Title'));
+        $fields->addFIeldTOTab('Root.Main',new TextareaField('Description','Photo Description (Max 500 Charachters)'));
+        $fields->addFIeldTOTab('Root.Main',new UploadField('Image','Photo'));
+
         return $fields;
     }
 
